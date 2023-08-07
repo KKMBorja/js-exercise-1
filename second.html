@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Part 2</title>
+</head>
+<body id="body">
+    <h1>JS Part II</h1>
+
+    <h2>We can change content with the use of JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('jsDemo').innerHTML='Hello world, this is my second JS example'">Change the HTML Content</button>
+    <p id="jsDemo">We can change HTML content with the use of JS</p>
+    
+    <hr>
+    <h2>We can change CSS styles using JavaScript</h2>
+    <p id="changeStyle">JS can change the style of an element</p>
+    <button type="button" onclick="document.getElementById('changeStyle').style.fontSize='50px'">Click me to change font size</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.backgroundColor='grey'">Turn background color to grey</button>
+    <hr>
+    <button type="button" onclick="document.getElementById('body').style.color='maroon'">Turn text color to maroon</button>
+    <button type="button" onclick="document.getElementById('changeStyle').style.color='aquamarine'">Turn text color to aquamarine</button>
+
+    <hr>
+    <h2>We can hide HTML elements using JS</h2>
+    <img src="images/rossi-play.jpg" style="width: 300px;" alt="Rossi the Puppy" id="rossi">
+    <button type="button" onclick="document.getElementById(rossi).style.display='none'">Hide</button>
+    <button type="button" onclick="document.getElementById(rossi).style.display='block'">Show</button>
+
+</body>
+</html>
